@@ -1,0 +1,31 @@
+{
+  "name": "eqi-goku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sucrase-node src/app.ts",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonasREJCS/eqi-goku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonasREJCS/eqi-goku/issues"
+  },
+  "homepage": "https://github.com/JonasREJCS/eqi-goku#readme",
+  "dependencies": {
+    "@hapi/joi": "^15.1.1",
+    "@types/node": "^12.7.4",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.19.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.6.2"
+  },
+  "devDependencies": {
+    "sucrase": "^3.10.1"
+  }
+}
