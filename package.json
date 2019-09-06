@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "sucrase-node src/app.ts",
+    "dev": "nodemon src/app.ts",
+    "hev": "nodemon --exec ts-node src/app.ts",
+    "build": ""
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/JonasREJCS/eqi-goku#readme",
   "dependencies": {
     "@hapi/joi": "^15.1.1",
+    "@types/hapi__joi": "^15.0.4",
     "@types/node": "^12.7.4",
     "ts-node": "^8.3.0",
     "tslint": "^5.19.0",
@@ -26,6 +29,7 @@
     "typescript": "^3.6.2"
   },
   "devDependencies": {
+    "nodemon": "^1.19.2",
     "sucrase": "^3.10.1"
   }
 }
