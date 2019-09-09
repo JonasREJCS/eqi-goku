@@ -1,6 +1,6 @@
 
-import { CondicaoTrabalho, DeclaraIR, TipoIR } from '../enums/enums'
-import { Simulacao } from '../classes/simulacao'
+import { CondicaoTrabalho, DeclaraIR, TipoIR } from '../@types/index'
+import { Simulacao } from '../classes/simulacao.class'
 /**
  * @param dadosSimulacaoId esse é o ID
  */

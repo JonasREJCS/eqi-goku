@@ -1,13 +1,12 @@
 export class Simulacao {
-    simulacaoId: number
-    data: Date
-  
-    constructor ({
+  simulacaoId?: number
+  data: Date
+
+  constructor ({
           simulacaoId,
           data
       }: Simulacao) {
-      this.simulacaoId = simulacaoId
-      this.data = data
-    }
+    this.simulacaoId = simulacaoId
+    this.data = data
   }
-  
+}
