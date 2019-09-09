@@ -7,7 +7,7 @@ export class Resultado {
     resultadoId,
     planoPrevidencia,
     regimeTributarioIR
-  }: Resultado ){
+  }: Resultado) {
     this.resultadoId = resultadoId
     this.planoPrevidencia = planoPrevidencia
     this.regimeTributarioIR = regimeTributarioIR

@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 const PORT = process.env.PORT || 7373
 
-if(process.env.NODE_ENV === 'DEVELOPMENT'){
+if (process.env.NODE_ENV === 'DEVELOPMENT') {
   app.listen(PORT, () => {
     console.log('listening on ' + PORT)
   })

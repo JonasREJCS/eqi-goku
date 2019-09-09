@@ -9,7 +9,7 @@ export class Rentabilidade {
     rentabilidadeId,
     rendimentoTotal,
     fundo
-  }: Rentabilidade){
+  }: Rentabilidade) {
     this.rentabilidadeId = rentabilidadeId
     this.rendimentoTotal = rendimentoTotal
     this.fundo = fundo

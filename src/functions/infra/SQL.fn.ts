@@ -21,15 +21,15 @@ const exec = (query: string): Promise<any> =>
   })
 
 const criarQueryInsert = (dados: {}, table: Table): string => {
-  const insertInto = "INSERT INTO " + table + " ("
-  let fields = ""
-  const insertValues = ") VALUES ("
-  let values = ""
+  const insertInto = 'INSERT INTO ' + table + ' ('
+  let fields = ''
+  const insertValues = ') VALUES ('
+  let values = ''
 
   for (const [key, value] of Object.entries(dados)) {
     if (value != null) {
-      fields += key + ", "
-      values += mysql.escape(value) + ", "
+      fields += key + ', '
+      values += mysql.escape(value) + ', '
     }
   }
 
