@@ -1,6 +1,8 @@
 require('dotenv').config()
 
 import express from 'express'
+import simulacaoRouter from './routes/simulacao.route'
+import bodyParser from 'body-parser'
 
 const app = express()
 
@@ -12,6 +14,9 @@ app.use((req, res, next) => {
   next()
 })
 
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+
 const PORT = process.env.PORT || 7373
 
 if(process.env.NODE_ENV === 'DEVELOPMENT'){
@@ -19,3 +24,5 @@ if(process.env.NODE_ENV === 'DEVELOPMENT'){
     console.log('listening on ' + PORT)
   })
 }
+
+app.use('/', simulacaoRouter)

@@ -6,7 +6,7 @@ import { Simulacao } from '../classes/simulacao.class'
  * @param dadosSimulacaoId esse é o ID
  */
 export class DadosSimulacao {
-  simulacao: Simulacao
+  simulacao?: Simulacao
   dadosSimulacaoId?: number
   condicaoTrabalho: CondicaoTrabalho
   declaraIR: DeclaraIR
