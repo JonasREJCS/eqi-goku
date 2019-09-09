@@ -1,5 +1,5 @@
 Arguments: 
-  /home/chefinha/.nvm/versions/node/v12.9.1/bin/node /usr/bin/yarn i
+  /home/chefinha/.nvm/versions/node/v12.9.1/bin/node /usr/bin/yarn run dev
 
 PATH: 
   /home/chefinha/anaconda3/bin:/home/chefinha/anaconda3/condabin:/home/chefinha/.nvm/versions/node/v12.9.1/bin:/home/chefinha/.local/bin:/home/chefinha/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/chefinha/.composer/vendor/bin:/var/lib/snapd/snap/bin
