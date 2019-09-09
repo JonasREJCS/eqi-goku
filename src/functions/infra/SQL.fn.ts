@@ -13,6 +13,10 @@ const config: PoolConfig = {
 
 const connection = mysql.createPool(config)
 
+/**
+ * Executa uma query
+ * @param query Query a ser executada
+ */
 const exec = (query: string): Promise<any> =>
   new Promise((resolve, reject) => {
     connection.query(query, (err, result) =>
@@ -20,6 +24,11 @@ const exec = (query: string): Promise<any> =>
     )
   })
 
+/**
+ * Cria um comando de insert
+ * @param dados objeto com dados a serem inseridos
+ * @param table tabela onde os dados serão inseridos
+ */
 const criarQueryInsert = (dados: {}, table: Table): string => {
   const insertInto = 'INSERT INTO ' + table + ' ('
   let fields = ''
