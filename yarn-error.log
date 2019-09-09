@@ -1,25 +1,25 @@
 Arguments: 
-  /home/bigjoe/.nvm/versions/node/v10.16.3/bin/node /usr/share/yarn/bin/yarn.js add nodemon
+  /home/chefinha/.nvm/versions/node/v12.9.1/bin/node /usr/bin/yarn run dev
 
 PATH: 
-  /home/bigjoe/anaconda3/bin:/home/bigjoe/anaconda3/condabin:/home/bigjoe/.nvm/versions/node/v10.16.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+  /home/chefinha/anaconda3/bin:/home/chefinha/anaconda3/condabin:/home/chefinha/.nvm/versions/node/v12.9.1/bin:/home/chefinha/.local/bin:/home/chefinha/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/chefinha/.composer/vendor/bin:/var/lib/snapd/snap/bin
 
 Yarn version: 
   1.17.3
 
 Node version: 
-  10.16.3
+  12.9.1
 
 Platform: 
   linux x64
 
 Trace: 
-  SyntaxError: /home/bigjoe/Documentos/desenvolvimento/eqi-goku/package.json: Unexpected token } in JSON at position 144
+  SyntaxError: /home/chefinha/Documentos/Projetos/Github/eqi-goku/package.json: Unexpected token } in JSON at position 144
       at JSON.parse (<anonymous>)
-      at /usr/share/yarn/lib/cli.js:1625:59
+      at /usr/lib/node_modules/yarn/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
-      at step (/usr/share/yarn/lib/cli.js:304:30)
-      at /usr/share/yarn/lib/cli.js:315:13
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:315:13
 
 npm manifest: 
   {

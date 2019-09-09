@@ -1,11 +1,12 @@
 
-import { CondicaoTrabalho, DeclaraIR, TipoIR } from '../enums/enums'
-import { Simulacao } from '../classes/simulacao'
+import { CondicaoTrabalho, DeclaraIR, TipoIR } from '../@types'
+import { Simulacao } from '../classes/simulacao.class'
+
 /**
  * @param dadosSimulacaoId esse é o ID
  */
 export class DadosSimulacao {
-  simulacao: Simulacao
+  simulacao?: Simulacao
   dadosSimulacaoId?: number
   condicaoTrabalho: CondicaoTrabalho
   declaraIR: DeclaraIR

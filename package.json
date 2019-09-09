@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "sucrase-node src/app.ts",
+    "dev": "sucrase-node src/app.ts"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,10 @@
   "dependencies": {
     "@hapi/joi": "^15.1.1",
     "@types/node": "^12.7.4",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
     "ts-node": "^8.3.0",
     "tslint": "^5.19.0",
     "tslint-config-standard": "^8.0.1",
