@@ -1,11 +1,17 @@
 
+<<<<<<< HEAD
 import { CondicaoTrabalho, DeclaraIR, TipoIR } from '../@types/index'
 import { Simulacao } from '../classes/simulacao.class'
+=======
+import { CondicaoTrabalho, DeclaraIR, TipoIR } from '../@types'
+import { Simulacao } from '../classes/simulacao.class'
+
+>>>>>>> 264df39458f5ddf246f42cf4b3227e17c672d6ea
 /**
  * @param dadosSimulacaoId esse é o ID
  */
 export class DadosSimulacao {
-  simulacao: Simulacao
+  simulacao?: Simulacao
   dadosSimulacaoId?: number
   condicaoTrabalho: CondicaoTrabalho
   declaraIR: DeclaraIR
