@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.ts",
+    "dev": "sucrase-node src/app.ts",
     "hev": "nodemon --exec ts-node src/app.ts",
-    "build": ""
+    "build": "tsc --build",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -30,11 +31,28 @@
     "ts-node": "^8.3.0"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.18",
     "jest": "^24.9.0",
     "nodemon": "^1.19.2",
     "sucrase": "^3.10.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
     "tslint": "^5.20.0",
     "tslint-config-standard": "^8.0.1",
     "typescript": "^3.6.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.test\\.ts",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
