@@ -42,6 +42,11 @@ const criarQueryInsert = (dados: {}, table: Table): string => {
     }
   }
 
+  console.log(`${insertInto}
+  ${fields.substring(0, fields.length - 2)}
+  ${insertValues + values.substring(0, values.length - 2)}
+  )`)
+
   return `${insertInto}
     ${fields.substring(0, fields.length - 2)}
     ${insertValues + values.substring(0, values.length - 2)}

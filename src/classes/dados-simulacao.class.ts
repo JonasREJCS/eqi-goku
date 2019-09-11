@@ -3,6 +3,7 @@ import { Simulacao } from '../classes/simulacao.class'
 
 export class DadosSimulacao {
   simulacao?: Simulacao
+  simulacaoId?: number
   dadosSimulacaoId?: number
   condicaoTrabalho: CondicaoTrabalho
   declaraIR: DeclaraIR
@@ -21,7 +22,8 @@ export class DadosSimulacao {
     rendaMensal,
     tempoContribuicao,
     contribuicaoMensal,
-    valorAporte
+    valorAporte,
+    simulacaoId
   }: DadosSimulacao) {
     this.simulacao = simulacao
     this.dadosSimulacaoId = dadosSimulacaoId
@@ -32,5 +34,6 @@ export class DadosSimulacao {
     this.tempoContribuicao = tempoContribuicao
     this.contribuicaoMensal = contribuicaoMensal
     this.valorAporte = valorAporte
+    this.simulacaoId = simulacaoId
   }
 }
