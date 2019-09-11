@@ -53,4 +53,25 @@ const criarQueryInsert = (dados: {}, table: Table): string => {
     )`
 }
 
-export { exec, criarQueryInsert, escape }
+const startTransaction = () =>
+new Promise((resolve, reject) => {
+  connection.query('START TRANSACTION;', (err, result) =>
+    err ? reject(err) : resolve(result)
+  )
+})
+
+
+const commitTransaction = () =>
+new Promise((resolve, reject) => {
+  connection.query('COMMIT;', (err, result) =>
+    err ? reject(err) : resolve(result)
+  )
+})
+
+const rollbackTransaction = () => 
+new Promise((resolve, reject) => {
+  connection.query('ROLLBACK;', (err, result) =>
+    err ? reject(err) : resolve(result)
+  )
+})
+export { exec, criarQueryInsert, escape, startTransaction, commitTransaction, rollbackTransaction }
