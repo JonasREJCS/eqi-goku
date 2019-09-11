@@ -1,7 +1,7 @@
 import Joi from '@hapi/joi'
 
 export const fundoSchema = Joi.object().keys({
-  fundoId: Joi.number().min(1).required(),
+  fundoId: Joi.number().positive().min(1).required(),
   tipoPlano: Joi.string().min(1).max(29).required(),
   SUSEP: Joi.string().min(1).max(21).required(),
   nomeSeguradora: Joi.string().min(1).max(120).required(),
