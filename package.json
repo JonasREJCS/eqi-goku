@@ -22,6 +22,7 @@
   "homepage": "https://github.com/JonasREJCS/eqi-goku#readme",
   "dependencies": {
     "@hapi/joi": "^15.1.1",
+    "@types/express-serve-static-core": "^4.16.9",
     "@types/hapi__joi": "^15.0.4",
     "@types/node": "^12.7.4",
     "dotenv": "^8.1.0",
