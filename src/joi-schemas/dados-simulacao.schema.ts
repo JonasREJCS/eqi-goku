@@ -14,5 +14,5 @@ export const dadosSimulacaoSchema = Joi.object().keys({
   rendaMensal: Joi.number().positive().min(rendaMinima).required(),
   tempoContribuicao: Joi.number().positive().integer().min(tempoContribuicaoMinimo).required(),
   contribuicaoMensal: Joi.number().positive().min(contribuicaoMensalMinima).required(),
-  valorAporte: Joi.number().positive()
+  valorAporte: Joi.number().min(0).optional()
 })
