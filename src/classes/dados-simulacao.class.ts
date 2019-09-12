@@ -2,7 +2,6 @@ import { CondicaoTrabalho, DeclaraIR, TipoIR } from '../@types/index'
 import { Simulacao } from '../classes/simulacao.class'
 
 export class DadosSimulacao {
-  simulacao?: Simulacao
   simulacaoId?: number
   dadosSimulacaoId?: number
   condicaoTrabalho: CondicaoTrabalho
@@ -14,7 +13,6 @@ export class DadosSimulacao {
   valorAporte: number
 
   constructor ({
-    simulacao,
     dadosSimulacaoId,
     condicaoTrabalho,
     declaraIR,
@@ -25,7 +23,6 @@ export class DadosSimulacao {
     valorAporte,
     simulacaoId
   }: DadosSimulacao) {
-    this.simulacao = simulacao
     this.dadosSimulacaoId = dadosSimulacaoId
     this.condicaoTrabalho = condicaoTrabalho
     this.declaraIR = declaraIR

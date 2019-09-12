@@ -36,11 +36,16 @@ const criarQueryInsert = (dados: {}, table: Table): string => {
   let values = ''
 
   for (const [key, value] of Object.entries(dados)) {
-    if (value != null) {
+    if (value != null && typeof(value) !== typeof(Object)) {
       fields += key + ', '
       values += mysql.escape(value) + ', '
     }
   }
+
+  console.log(`${insertInto}
+  ${fields.substring(0, fields.length - 2)}
+  ${insertValues + values.substring(0, values.length - 2)}
+  )`)
 
   return `${insertInto}
     ${fields.substring(0, fields.length - 2)}

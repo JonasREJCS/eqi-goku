@@ -27,7 +27,7 @@ export const salvar: RequestHandler = async (req, res) => {
     const resultadoSimulacao = await salvarSimulacao(simulacao)
 
     if (resultadoSimulacao.affectedRows === 0) throw new Error(msgErro.erro1)
-
+    dadosSimulacao.simulacaoId = resultadoSimulacao.insertId
     const resultadoDadosSimulacao = await salvarDadosSimulacao(dadosSimulacao, resultadoSimulacao.insertId)
 
     if (resultadoDadosSimulacao.affectedRows === 0) throw new Error(msgErro.erro2)

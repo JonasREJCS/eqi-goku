@@ -6,7 +6,6 @@ const tempoContribuicaoMinimo: number = 5
 const contribuicaoMensalMinima: number = 100
 
 export const dadosSimulacaoSchema = Joi.object().keys({
-  simulacao: simulacaoSchema,
   dadosSimulacaoId: Joi.number().positive(),
   condicaoTrabalho: Joi.string().only('CLT' , 'SERVIDOR PUBLICO', 'OUTRO').required(),
   declaraIR: Joi.string().only('NAO DECLARA IR' , 'DECLARA IR').required(),
