@@ -13,7 +13,7 @@ import { startTransaction, commitTransaction, rollbackTransaction } from '../fun
 export const salvar: RequestHandler = async (req, res) => {
   try {
     const msgErro = {
-      erro1: `A Simulacao não foram salvos no banco de dados devido a um erro.`,
+      erro1: `A Simulacao não foi salva no banco de dados devido a um erro.`,
       erro2: `Os Dados da Simulacao não foram salvos no banco de dados devido a um erro.`
     }
 
