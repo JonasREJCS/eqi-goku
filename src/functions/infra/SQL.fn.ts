@@ -60,7 +60,6 @@ new Promise((resolve, reject) => {
   )
 })
 
-
 const commitTransaction = () =>
 new Promise((resolve, reject) => {
   connection.query('COMMIT;', (err, result) =>
